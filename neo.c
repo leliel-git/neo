@@ -55,7 +55,7 @@ main(void)
 		0.4275, 0.1275, 0.1425, 0.3550, 0.2275, 0.1450
 	};
 
-	system("clear && stty -echo");
+	system("clear; stty -echo");
 	/* set text to bold green, hide the cursor and put identation on the line. */
 	printf(BOLDON LIGHT_GREEN CURSOROFF IDENTATION);
 
@@ -69,7 +69,7 @@ main(void)
 
  	/* unhide cursor and set all text formating back to system default. */
 	printf("%s\n", CURSORON END);
-	system("clear");
+	system("clear; stty echo");
 	
 	return 0;
 }
